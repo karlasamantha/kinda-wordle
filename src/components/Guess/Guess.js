@@ -3,7 +3,7 @@ import { range } from '../../utils'
 import { checkGuess } from '../../game-helpers'
 
 function Cell({ letter, status }) {
-  return <span className={`cell ${status ? status : null}`}>{letter}</span>
+  return <span className={`cell ${status ? status : ''}`}>{letter}</span>
 }
 
 function Guess({ word, answer }) {
