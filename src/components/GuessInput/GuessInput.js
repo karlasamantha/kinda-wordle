@@ -5,7 +5,7 @@ const GuessInput = ({ handleSubmitGuess }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('guess: ', guess)
+    // console.log('guess: ', guess)
     handleSubmitGuess(guess)
     setGuess('')
   }
