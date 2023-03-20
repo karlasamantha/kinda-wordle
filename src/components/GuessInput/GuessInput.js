@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GuessInput = ({ handleSubmitGuess }) => {
+const GuessInput = ({ gameStatus, handleSubmitGuess }) => {
   const [guess, setGuess] = React.useState('')
 
   const handleSubmit = (e) => {
@@ -21,6 +21,7 @@ const GuessInput = ({ handleSubmitGuess }) => {
         maxLength={5}
         minLength={5}
         pattern="[a-zA-Z]{5}"
+        disabled={gameStatus !== 'active'}
       />
     </form>
   )
